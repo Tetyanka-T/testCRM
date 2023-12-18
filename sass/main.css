@@ -1,0 +1,47 @@
+:root {
+  --main-font: Poppins, sans-serif;
+  --menu-color: #9197B3;
+  --main-text-color: #292D32;
+  --secondary-text-color: #B5B7C0;
+  --accent-text-color: #000000;
+  --active-color: #16C098;
+  --user-color: #757575;
+  --background-color: #FAFBFF;
+  --pagination-active-background-button: #5932EA;
+  --pagination-active-text-color: #404B52;
+  --pagination-background-button: #EEEEEE;
+  --pagination-text-color: #404B52;
+  --search-background-color: #F9FBFF;
+  --inactive-color-button: #DF0404;
+  --inactive-background-button: #FFC5C5;
+  --active-color-button: #00B087;
+  --active-background-button: #16C09861;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
