@@ -11,17 +11,251 @@
     <link rel="stylesheet" href="sass/main.css">
 </head>
 <body>
-    <div class="container">
-        <aside>
+    <div class="container dashboard">
+        <nav class="nav">
             <div class="logo">
-                <h1>Dashboard</h1>
                 <svg width="37" height="37">
                     <use href="./image/sprite.svg#setting"></use>
                 </svg>
+                <p class="logo_text">Dashboard <span>v.01</span></p>
             </div>
-        </aside>
-        <div></div>
+        
+            <ul class="nav_menu-list list">
+                
+                <li class="nav_menu-list__item">
+                    <a href="#">
+                        <svg width="24" height="24" class="nav_menu-list__item__icon">
+                            <use href="./image/sprite.svg#key-square"></use>
+                        </svg>
+                        <p class="nav_menu-list__item__text">Dashboard</p> 
+                    </a>
+                </li>
+                <li class="nav_menu-list__item">
+                    <a href="/mobile.html">
+                        <svg width="24" height="24" class="nav_menu-list__item__icon">
+                            <use href="./image/sprite.svg#d-square"></use>
+                        </svg>
+                        <p class="nav_menu-list__item__text">Product</p>
+                            <svg width="16" height="16" class="nav_menu-list__item__icon__menu">
+                                <use href="./image/sprite.svg#chevron-right"></use>
+                            </svg>
+                    </a>
+                 
+                </li>
+                <li class="nav_menu-list__item">
+                    <a href="/mobile.html">
+                        <svg width="24" height="24" class="nav_menu-list__item__icon">
+                            <use href="./image/sprite.svg#user"></use>
+                        </svg>
+                        <p class="nav_menu-list__item__text">Customers</p>
+                        <svg width="16" height="16" class="nav_menu-list__item__icon__menu">
+                            <use href="./image/sprite.svg#chevron-right"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav_menu-list__item">
+                    <a href="/mobile.html"><svg width="24" height="24" class="nav_menu-list__item__icon">
+                        <use href="./image/sprite.svg#wallet-money"></use>
+                    </svg>
+                    <p class="nav_menu-list__item__text">Income</p>
+                    <svg width="16" height="16" class="nav_menu-list__item__icon__menu">
+                        <use href="./image/sprite.svg#chevron-right"></use>
+                    </svg></a>
+                    
+                </li>
+                <li class="nav_menu-list__item">
+                    <a href="/mobile.html">
+                        <svg width="24" height="24" class="nav_menu-list__item__icon">
+                            <use href="./image/sprite.svg#discount-shape"></use>
+                        </svg>
+                        <p class="nav_menu-list__item__text">Promote</p>
+                        <svg width="16" height="16" class="nav_menu-list__item__icon__menu">
+                            <use href="./image/sprite.svg#chevron-right"></use>
+                        </svg>
+                    </a>
+                    
+                </li>
+                <li class="nav_menu-list__item">
+                    <a href="/mobile.html">
+                        <svg width="24" height="24" class="nav_menu-list__item__icon">
+                            <use href="./image/sprite.svg#message-question"></use>
+                        </svg>
+                        <p class="nav_menu-list__item__text">Help</p>
+                        <svg width="16" height="16" class="nav_menu-list__item__icon__menu">
+                            <use href="./image/sprite.svg#chevron-right"></use>
+                        </svg>
+                    </a>
+                   
+                </li>
+                
+            </ul>
+            <div class="nav_user">
+                <img src="./image/user.png"/>
+                <div class="nav_user__data">
+                    <p class="nav_user__data__name">Evano</p>
+                    <p class="nav_user__data__position">Project Manager</p>
+                </div>
+            </div>
+        </nav>
+      
+        <div class="product">
+            <h2 class="product_hello-user">Hello Evano 👋🏼,</h2>
+            <div class="product_dashboard">
+                <div class="product_dashboard__header">
+                    <div>
+                        <p class="product_dashboard__header__title">All Customers</p>
+                        <p class="product_dashboard__header__section">Active Members</p>
+                    </div>
+                    <form class="product_dashboard__header__form">
+                        <button type="submit" class="product_dashboard__header__form__button">
+                            <svg width="24" height="24">
+                                <use href="./image/sprite.svg#search"></use>
+                            </svg></button>
+                        <input class="product_dashboard__header__form__input" placeholder="Search"/>
+                    </form>
+                 
+                </div>
+                <table class="product_dashboard__table">
+                    <tr>
+                        <th class="product_dashboard__table__title">Customer Name</th>
+                        <th class="product_dashboard__table__title">Company</th>
+                        <th class="product_dashboard__table__title">Phone Number</th>
+                        <th class="product_dashboard__table__title">Email</th>
+                        <th class="product_dashboard__table__title">Country</th>
+                        <th class="product_dashboard__table__title">Status</th>
+                    </tr>
+                    <tr>
+                        <td>Jane Cooper</td>
+                        <td>Microsoft</td>
+                        <td>(225) 555-0118</td>
+                        <td>jane@microsoft.com</td>
+                        <td>United States</td>
+                        <td>
+                            <button class="product_dashboard__table__button active">Active
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Floyd Miles</td>
+                        <td>Yahoo</td>
+                        <td>(205) 555-0100</td>
+                        <td>floyd@yahoo.com</td>
+                        <td>Kiribati</td>
+                        <td>
+                            <button class="product_dashboard__table__button inactive">Inactive
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ronald Richards</td>
+                        <td>Adobe</td>
+                        <td>(302) 555-0107</td>
+                        <td>ronald@adobe.com</td>
+                        <td>Israel</td>
+                        <td>
+                            <button class="product_dashboard__table__button inactive">Inactive
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marvin McKinney</td>
+                        <td>Tesla</td>
+                        <td>(252) 555-0126</td>
+                        <td>marvin@tesla.com</td>
+                        <td>Iran</td>
+                        <td>
+                            <button class="product_dashboard__table__button active">Active
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jerome Bell</td>
+                        <td>Google</td>
+                        <td>(629) 555-0129</td>
+                        <td>jerome@google.com</td>
+                        <td>Réunion</td>
+                        <td>
+                            <button class="product_dashboard__table__button active">Active
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kathryn Murphy</td>
+                        <td>Microsoft</td>
+                        <td>(406) 555-0120</td>
+                        <td>kathryn@microsoft.com</td>
+                        <td>Curaçao</td>
+                        <td>
+                            <button class="product_dashboard__table__button active">Active
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jacob Jones</td>
+                        <td>Yahoo</td>
+                        <td>(208) 555-0112</td>
+                        <td>jacob@yahoo.com</td>
+                        <td>Brazil</td>
+                        <td>
+                            <button class="product_dashboard__table__button active">Active
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kristin Watson</td>
+                        <td>Facebook</td>
+                        <td>(704) 555-0127</td>
+                        <td>kristin@facebook.com</td>
+                        <td>Åland Islands</td>
+                        <td>
+                            <button class="product_dashboard__table__button inactive">Inactive
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="product_dashboard__footer">
+                    <p class="product_dashboard__footer__text">Showing data 1 to 8 of  256K entries</p>
+                    <ul class="product_dashboard_pagination_list list">
+                        <li class="product_dashboard_pagination_list__item">
+                            <button type="button">
+                                <svg width="26" height="26">
+                                    <use href="./image/sprite.svg#prev"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="product_dashboard_pagination_list__item">
+                            <button type="button" class="product_dashboard_pagination_list__item__button">1</button>
+                        </li>
+                        <li class="product_dashboard_pagination_list__item">
+                            <button type="button" class="product_dashboard_pagination_list__item__button">2</button>
+                        </li>
+                        <li class="product_dashboard_pagination_list__item">
+                            <button type="button" class="product_dashboard_pagination_list__item__button">3</button>
+                        </li>
+                        <li class="product_dashboard_pagination_list__item">
+                            <button type="button" class="product_dashboard_pagination_list__item__button">4</button>
+                        </li>
+                        <li class="product_dashboard_pagination_list__item">
+                            <button type="button">
+                                <svg width="9" height="12">
+                                    <use href="./image/sprite.svg#rolled-up"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="product_dashboard_pagination_list__item">
+                            <button type="button" class="product_dashboard_pagination_list__item__button">40</button>
+                        </li>
+                        <li class="product_dashboard_pagination_list__item">
+                            <button type="button">
+                                <svg width="26" height="26">
+                                    <use href="./image/sprite.svg#next"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
     </div>
-    
 </body>
 </html>

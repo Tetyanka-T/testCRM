@@ -12,7 +12,9 @@
   *::after {
     box-sizing: inherit;
   }
-  
+  body {
+    font-style: normal;
+  }
   h1,
   h2,
   h3,
@@ -35,4 +37,12 @@
   img {
     display: block;
   }
-  
+  button {
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
+  a {
+    text-decoration: none;
+  }
